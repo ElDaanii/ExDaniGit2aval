@@ -3,7 +3,7 @@
 ciudad=$(grep "$1" consumos.txt)
 
 cont=1
-promedio=0
+promedio=1
 while [ $cont -lt 22 ]; do
     tiempo=$(awk 'NR=='$cont'{print $NF}' consumos.txt)
     promedio=$((promedio + tiempo))
